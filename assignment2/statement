@@ -1,0 +1,9 @@
+Exercise 1
+Write a shell script that prompts the user for a name of a file or directory and reports if it is a regular file, a directory, or another type of file. Also perform an ls command against the file or directory with the long listing option.
+Name your shell script as "filecheck.sh"
+
+Exercise 2:
+Modify the previous script so that it accepts the file or directory name as an argument instead of prompting the user to enter it. Call the modified script "filecheck_modified.sh"
+
+Exercise 3:
+Modify the file in exercise 2 and include exit status. If it's a regular file, exit with status 0, if it's a directory, exit with status 1 and if it's any other file exit with status 2. Make sure your "ls" command still works. Name this script "filecheck_with_exit_status.sh"
