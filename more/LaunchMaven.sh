@@ -26,3 +26,30 @@ source /etc/profile
 
 # Check Maven version
 mvn -version
+
+
+# SOLUTION 2
+# #!/bin/bash
+
+# # Update system
+# sudo yum update -y
+
+# # Install necessary packages
+# sudo yum install wget nano tree unzip git java-11-openjdk-devel java-1.8.0-openjdk-devel -y
+
+# # Download and install Maven
+# cd /opt || exit
+# sudo wget https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip
+# sudo unzip apache-maven-3.9.6-bin.zip
+# sudo rm -rf apache-maven-3.9.6-bin.zip
+# sudo mv apache-maven-3.9.6/ maven
+
+# # Set Environmental Variables
+# echo "export M2_HOME=/opt/maven" >> ~/.bashrc
+# echo "export PATH=\$PATH:\$M2_HOME/bin" >> ~/.bashrc
+
+# # Activate Maven environment
+# source ~/.bashrc
+
+# # Check Maven version
+# mvn -version
